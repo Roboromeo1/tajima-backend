@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 // Configure CORS
 const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your client's origin
+  origin: 'https://tajima-frontend.vercel.app', // Replace with your client's origin
   credentials: true, // Allow cookies
 };
 app.use(cors(corsOptions));
