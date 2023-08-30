@@ -15,7 +15,7 @@ import colorSetRoutes from './routes/colorSetRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 
-const port = process.env.PORT || 5001;
+const port = 3000;
 
 connectDB();
 
