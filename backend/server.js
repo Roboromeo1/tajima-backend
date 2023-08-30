@@ -40,7 +40,7 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/colorsets', colorSetRoutes);
 
 app.get('/api/config/paypal', (req, res) =>
-  res.send({ clientId: process.env.PAYPAL_CLIENT_ID })
+  res.send({ clientId: "Af-ANrFTv95TdZ9VlV3QeL_xASsH29zbCItiPyXtkHPbQrgVriFxLvtqZepGdRTuGsL4iVTyCbv2vnid" })
 );
 
 if (process.env.NODE_ENV === 'production') {
