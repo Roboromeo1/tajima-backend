@@ -27,7 +27,8 @@ app.use(cookieParser());
 
 // Configure CORS
 const corsOptions = {
-  origin: 'https://tajima-frontend.vercel.app', // Replace with your client's origin
+  // origin: 'http://localhost:3001',
+  origin: 'https://tajima-frontend.vercel.app',
   credentials: true, // Allow cookies
 };
 app.use(cors(corsOptions));
@@ -45,7 +46,7 @@ app.get('/api/config/paypal', (req, res) =>
 
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();
-  app.use('/uploads', express.static('/var/data/uploads'));
+  app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
   app.use(express.static(path.join(__dirname, '/frontend/build')));
 
   app.get('*', (req, res) =>
