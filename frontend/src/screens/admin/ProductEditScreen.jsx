@@ -30,29 +30,14 @@ const ProductEditScreen = () => {
     refetch,
     error,
   } = useGetProductDetailsQuery(productId);
-  console.log("Payload:", {
-    productId,
-    name,
-    price,
-    image,
-    brand,
-    category,
-    description,
-    countInStock,
-    colorSetId,
-  });
 
-  const [updateProduct, { isLoading: loadingUpdate }] =
-    useUpdateProductMutation();
-
-  const [uploadProductImage, { isLoading: loadingUpload }] =
-    useUploadProductImageMutation();
+  const [updateProduct, { isLoading: loadingUpdate }] = useUpdateProductMutation();
+  const [uploadProductImage, { isLoading: loadingUpload }] = useUploadProductImageMutation();
 
   const navigate = useNavigate();
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log("Current colorSetId:", colorSetId);
     try {
       await updateProduct({
         productId,
@@ -73,7 +58,6 @@ const ProductEditScreen = () => {
     }
   };
 
-
   useEffect(() => {
     if (product) {
       setName(product.name);
@@ -86,9 +70,9 @@ const ProductEditScreen = () => {
       setColorSetId(product.colorSetId || "");
     }
   }, [product]);
-  
+
   const {
-    data: colorSets,
+    data: colorSets = [],
     isLoading: loadingColorSets,
     error: colorSetError,
   } = useGetColorSetsQuery();
@@ -193,15 +177,12 @@ const ProductEditScreen = () => {
                 <Form.Control
                   as="select"
                   value={colorSetId}
-                  onChange={(e) => {
-                    setColorSetId(e.target.value);
-                    console.log("Selected colorSetId:", e.target.value); // Log the selected value
-                  }}
+                  onChange={(e) => setColorSetId(e.target.value)}
                 >
                   <option value="" disabled defaultValue="">
                     Select a color set
                   </option>
-                  {colorSets.map((colorSet, index) => (
+                  {Array.isArray(colorSets) && colorSets.map((colorSet, index) => (
                     <option key={index} value={colorSet._id}>
                       {colorSet.name}
                     </option>
@@ -220,11 +201,7 @@ const ProductEditScreen = () => {
               ></Form.Control>
             </Form.Group>
 
-            <Button
-              type="submit"
-              variant="primary"
-              style={{ marginTop: "1rem" }}
-            >
+            <Button type="submit" variant="primary">
               Update
             </Button>
           </Form>
