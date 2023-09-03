@@ -24,12 +24,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// Debugging middleware for CORS (before setting CORS headers)
+app.use((req, res, next) => {
+  console.log("Received request with headers: ", req.headers);
+  next();
+});
+
 // Configure CORS
 const corsOptions = {
   origin: "https://tajima-frontend.vercel.app",
   credentials: true, // Allow cookies
 };
 app.use(cors(corsOptions));
+
+// Debugging middleware for CORS (after setting CORS headers)
+app.use((req, res, next) => {
+  console.log("Response headers after CORS middleware: ", res.getHeaders());
+  next();
+});
 
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
@@ -43,13 +55,15 @@ app.get("/api/config/paypal", (req, res) =>
   })
 );
 
-const uploadsDir = path.resolve(__dirname, '../uploads');  // <-- changed this line
-console.log("Uploads directory:", uploadsDir);  // <-- added for debugging
+const uploadsDir = path.resolve(__dirname, '../uploads');
+console.log("Uploads directory:", uploadsDir);
+
 console.log(`Current environment: ${process.env.NODE_ENV}`);
+
 if (process.env.NODE_ENV === "production") {
-  app.use("/uploads", express.static(uploadsDir));  // <-- changed this line
+  app.use("/uploads", express.static(uploadsDir));
 } else {
-  app.use("/uploads", express.static(uploadsDir));  // <-- changed this line
+  app.use("/uploads", express.static(uploadsDir));
   app.get("/", (req, res) => {
     res.send("API is running....");
   });
@@ -58,6 +72,6 @@ if (process.env.NODE_ENV === "production") {
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(port, () => 
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`)
-);
+app.listen(port, () => {
+  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
+});
