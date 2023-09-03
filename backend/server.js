@@ -45,7 +45,7 @@ app.get("/api/config/paypal", (req, res) =>
 
 const uploadsDir = path.resolve(__dirname, '../uploads');  // <-- changed this line
 console.log("Uploads directory:", uploadsDir);  // <-- added for debugging
-
+console.log(`Current environment: ${process.env.NODE_ENV}`);
 if (process.env.NODE_ENV === "production") {
   app.use("/uploads", express.static(uploadsDir));  // <-- changed this line
 } else {
