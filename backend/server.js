@@ -26,7 +26,6 @@ app.use(cookieParser());
 
 // Configure CORS
 const corsOptions = {
-  // origin: 'http://localhost:3001',
   origin: "https://tajima-frontend.vercel.app",
   credentials: true, // Allow cookies
 };
@@ -36,30 +35,21 @@ app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/upload", uploadRoutes);
-
 app.use("/api/colorsets", colorSetRoutes);
 
 app.get("/api/config/paypal", (req, res) =>
   res.send({
-    clientId:
-      "Af-ANrFTv95TdZ9VlV3QeL_xASsH29zbCItiPyXtkHPbQrgVriFxLvtqZepGdRTuGsL4iVTyCbv2vnid",
+    clientId: "Af-ANrFTv95TdZ9VlV3QeL_xASsH29zbCItiPyXtkHPbQrgVriFxLvtqZepGdRTuGsL4iVTyCbv2vnid",
   })
 );
 
+const uploadsDir = path.resolve(__dirname, '../uploads');  // <-- changed this line
+console.log("Uploads directory:", uploadsDir);  // <-- added for debugging
+
 if (process.env.NODE_ENV === "production") {
-  const __dirname = path.resolve();
-  app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
-  app.use(express.static(path.join(__dirname, "/frontend/build")));
-  console.log("Directory name in prod:", __dirname);
-  console.log("Uploads path in prod:", path.join(__dirname, "/uploads"));
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
-  );
+  app.use("/uploads", express.static(uploadsDir));  // <-- changed this line
 } else {
-  const __dirname = path.resolve();
-  console.log("Directory name in dev:", __dirname);
-  console.log("Uploads path in dev:", path.join(__dirname, "/uploads"));
-  app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+  app.use("/uploads", express.static(uploadsDir));  // <-- changed this line
   app.get("/", (req, res) => {
     res.send("API is running....");
   });
@@ -68,6 +58,6 @@ if (process.env.NODE_ENV === "production") {
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(port, () =>
+app.listen(port, () => 
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`)
 );
