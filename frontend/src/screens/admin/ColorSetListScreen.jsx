@@ -15,7 +15,7 @@ const ColorSetListScreen = () => {
   const { data: colorSets, isLoading, error } = useGetColorSetsQuery();
   const [deleteColorSet] = useDeleteColorSetMutation();
   const [createColorSet, { isLoading: loadingCreate, error: errorCreate }] = useCreateColorSetMutation();
-  
+
   const navigate = useNavigate();
 
   const deleteHandler = (id) => {
