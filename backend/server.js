@@ -52,7 +52,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 
 } else {
-  // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
   app.use('/uploads', express.static('/home/ubuntu/tajima-backend/uploads'));
   app.get('/', (req, res) => {
     res.send('API is running....');
