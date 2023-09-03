@@ -45,15 +45,15 @@ app.get('/api/config/paypal', (req, res) =>
 );
 
 if (process.env.NODE_ENV === 'production') {
-  const __dirname = path.resolve();
-  app.use('/uploads', express.static(path.join(__dirname, '/uploads')));    
+  app.use('/uploads', express.static('/home/ubuntu/tajima-backend/uploads'));
+
   app.get('/', (req, res) => {
     res.send('API is running....');
   });
 
 } else {
-  const __dirname = path.resolve();
-  app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+  // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+  app.use('/uploads', express.static('/home/ubuntu/tajima-backend/uploads'));
   app.get('/', (req, res) => {
     res.send('API is running....');
   });
