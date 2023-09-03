@@ -16,6 +16,7 @@
   "author": "Adhitya Ram",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.1450.0",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.6",
