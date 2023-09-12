@@ -48,6 +48,9 @@ const getProductById = asyncHandler(async (req, res) => {
 // @route   POST /api/products
 // @access  Private/Admin
 const createProduct = asyncHandler(async (req, res) => { 
+  // console.log(req.body.colorSetId)
+  try{
+    console.log("Nitish api call for post new product");
   const { name, price, description, image, brand, category, countInStock, colorSetId } = req.body;
 
   const product = new Product({
@@ -59,11 +62,14 @@ const createProduct = asyncHandler(async (req, res) => {
     category,
     countInStock,
     description,
-    colorSet: colorSetId,
+    colorSetId
   });
-  
   const createdProduct = await product.save();
   res.status(201).json(createdProduct);
+
+  }catch(err){
+    console.log(err)
+  }
 });
 
 // @desc    Update a product

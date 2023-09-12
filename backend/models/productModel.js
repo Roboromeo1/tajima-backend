@@ -73,8 +73,10 @@ const productSchema = mongoose.Schema(
     },
     variants: [variantSchema],
     colorSet: { // Remove 'required: true' here
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'ColorSet',
+      // type: mongoose.Schema.Types.ObjectId,
+      type:"string",
+      // ref: 'ColorSet',
+      default:""
     },
   },
   {

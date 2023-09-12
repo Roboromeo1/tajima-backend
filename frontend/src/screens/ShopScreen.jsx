@@ -8,6 +8,7 @@ import Paginate from '../components/Paginate';
 import Sidebar from '../components/SideBar'; 
 
 const ShopScreen = () => {
+  
   const [category, setCategory] = useState('');
   const [priceRange, setPriceRange] = useState('');
 

@@ -50,7 +50,10 @@ const CartScreen = () => {
                   </Col>
                   <Col md={3}>
                     <Link to={`/product/${item._id}`}>{item.name}</Link>
-                    <div>Color: {item.colorCode}</div>
+                    {
+                      item?.color?.name? <><div>Color: {item?.color?.name}</div></>:""
+                    }
+                    
                   </Col>
                   <Col md={2}>${item.price}</Col>
                   <Col md={2}>

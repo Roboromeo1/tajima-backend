@@ -13,6 +13,8 @@ import {
 import { toast } from 'react-toastify';
 
 const ProductListScreen = () => {
+  
+  console.log("Nitish ProductListScreen")
   const { pageNumber } = useParams();
 
   const { data, isLoading, error, refetch } = useGetProductsQuery({
@@ -54,6 +56,7 @@ const ProductListScreen = () => {
           await createProduct(newProduct);
           refetch();
         } catch (err) {
+          // console.log(err);
           toast.error(err?.data?.message || err.error);
         }
       }

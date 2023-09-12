@@ -11,6 +11,7 @@ import {
 import { toast } from 'react-toastify';
 
 const UserListScreen = () => {
+  
   const { data: users, refetch, isLoading, error } = useGetUsersQuery();
 
   const [deleteUser] = useDeleteUserMutation();
