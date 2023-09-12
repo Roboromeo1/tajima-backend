@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Sidebar = ({ filter_category, setPriceRange }) => {
+const Sidebar = ({setselect_Price_range, filter_category, max_price, filter_by_range }) => {
+  const [select_Price, setselect_price]=useState("")
+  setselect_Price_range(select_Price)
+  // console.log(select_Price)
   return (
     <div>
       <h3>Filter Products</h3>
@@ -8,7 +11,8 @@ const Sidebar = ({ filter_category, setPriceRange }) => {
       <br></br>
       <div>
         <label>Filter By Price:</label><br></br>
-        <input type="range" onChange={(e) => setPriceRange(e.target.value)} />
+        <h3>{select_Price}</h3>
+        <input type="range" value={select_Price} onChange={(e) => setselect_price(e.target.value)} id="points" name="points" min="0" max={max_price}></input>
       </div>
       <br></br>
         <label>Category:</label>
