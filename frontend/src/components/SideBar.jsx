@@ -1,7 +1,6 @@
-
 import React from 'react';
 
-const Sidebar = ({ setCategory, setPriceRange }) => {
+const Sidebar = ({ filter_category, setPriceRange }) => {
   return (
     <div>
       <h3>Filter Products</h3>
@@ -14,12 +13,12 @@ const Sidebar = ({ setCategory, setPriceRange }) => {
       <br></br>
         <label>Category:</label>
         <ul>
-          <li onClick={() => setCategory('')}>All</li>
-          <li onClick={() => setCategory('Maidera')}>Maidera</li>
-          <li onClick={() => setCategory('Consumables')}>Consumables</li>
-          <li onClick={() => setCategory('Consumables')}>Heat Presses</li>
-          <li onClick={() => setCategory('Consumables')}>Pulse</li>
-          <li onClick={() => setCategory('Consumables')}>Seit Laser</li>
+          <li style={{cursor:'pointer'}} onClick={() => filter_category('all')}>All</li>
+          <li style={{cursor:'pointer'}} onClick={() => filter_category('Maidera')}>Maidera</li>
+          <li style={{cursor:'pointer'}} onClick={() => filter_category('Consumables')}>Consumables</li>
+          <li style={{cursor:'pointer'}} onClick={() => filter_category('Heat Presses')}>Heat Presses</li>
+          <li style={{cursor:'pointer'}} onClick={() => filter_category('Pulse')}>Pulse</li>
+          <li style={{cursor:'pointer'}} onClick={() => filter_category('Seit Laser')}>Seit Laser</li>
           {/* Add more categories as needed */}
         </ul>
       </div>
