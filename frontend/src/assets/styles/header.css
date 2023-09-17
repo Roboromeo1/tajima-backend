@@ -1,0 +1,72 @@
+/* Override Bootstrap styles for multi-level dropdown */
+.nav-main .dropdown-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    
+  }
+  
+  .nav-main .dropdown-menu .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  /* Your existing CSS */
+  /* Main menu (level 1) */
+  .nav-main .dropdown-menu {
+    background-color: #233243 ;
+    color: white;
+  }
+  /* .nav-main .dropdown-menu {
+
+    background-color: #233243 ;
+    color: white;
+  } */
+  /* Submenu (level 2) */
+  .nav-main .dropdown-menu .dropdown-menu {
+    background-color: #233243 ;
+  }
+  
+  /* Submenu (level 3) */
+  .nav-main .dropdown-menu .dropdown-menu .dropdown-menu {
+    background-color: #233243 ;
+  }
+ 
+  /* Other styles to highlight active or hovered items */
+  .nav-main .dropdown-item:hover {
+    background-color: #233243 ;
+  }
+  .show-nested {
+    display: block !important;
+  }
+  
+
+ /* Your existing CSS here */
+
+/* Mobile styles */
+@media (max-width: 992px) {
+    .nav-main .dropdown-menu {
+      position: relative;
+      left: 0;
+      top: auto;
+      display: none;
+      width: 100%;
+    }
+  
+    .nav-main .dropdown:hover > .dropdown-menu,
+    .nav-main .show-nested {
+      display: block;
+    }
+  
+    .nav-main .dropdown-menu .dropdown-menu {
+      position: relative;
+      left: 0;
+      top: auto;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* Your tablet-specific styles here */
+  }
+  
