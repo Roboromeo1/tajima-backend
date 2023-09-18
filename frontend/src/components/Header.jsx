@@ -169,7 +169,7 @@ const Header = () => {
                   renderMenuOnMount={true}
                   style={{ position: "relative" }}
                 >
-                       <div className="dropdown">
+                  <div className="dropdown">
                     <NavDropdown
                       title="Embroidery"
                       id="embrodiery"
@@ -190,7 +190,77 @@ const Header = () => {
                 </NavDropdown>
               </NavDropdown>
               <LinkContainer to="/consumables">
-                <Nav.Link>CONSUMABLES</Nav.Link>
+                <NavDropdown
+                  title="CONSUMABLES"
+                  id="consumables"
+                  className="dropdown"
+                  renderMenuOnMount={true}
+                >
+                  <NavDropdown
+                    title="Cutaway Backing"
+                    id="cutawayBacking"
+                    className="dropdown"
+                    renderMenuOnMount={true}
+                    style={{ position: "relative" }}
+                  >
+                    <LinkContainer to="/pre-cut-squares">
+                      <Nav.Link>Pre Cut Squares</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/ca-precut-rolls">
+                      <Nav.Link>CA Pre Cut Rolls</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/cut-away-rolls">
+                      <Nav.Link>Cut Away Rolls</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/no-show-cut-away">
+                      <Nav.Link>No Show Cut Away</Nav.Link>
+                    </LinkContainer>
+                  </NavDropdown>
+                  <NavDropdown
+                    title="Tearaway Backing"
+                    id="tearawayBacking"
+                    className="dropdown"
+                    renderMenuOnMount={true}
+                    style={{ position: "relative" }}
+                  >
+                    <LinkContainer to="/pre-cut-squares">
+                      <Nav.Link>Pre Cut Squares</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/pre-cut-rolls">
+                      <Nav.Link>Pre Cut Rolls</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/tear-away-rolls">
+                      <Nav.Link>Tear Away Rolls</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/dimple-tear-away">
+                      <Nav.Link>Dimple Tear Away</Nav.Link>
+                    </LinkContainer>
+                  </NavDropdown>
+                  <LinkContainer to="/tear-away-cut-away">
+                <Nav.Link>Tearaway Cutaway</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/bobbin-threads">
+                <Nav.Link>Bobbin Threads</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/solvy">
+                <Nav.Link>Solvy Water Soluble</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/wash-away-backing">
+                <Nav.Link>Wash Away Backing</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/badge-fabric">
+                <Nav.Link>Badge Fabric & Iron on Backing</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/3d-foam">
+                <Nav.Link>3D Embroidery Foam</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/3d-foam">
+                <Nav.Link>Needles Scissiors & Stitch Erasers</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/3d-foam">
+                <Nav.Link>Tajima Oil & Spray Products</Nav.Link>
+              </LinkContainer>
+                </NavDropdown>
               </LinkContainer>
               <LinkContainer to="/information">
                 <Nav.Link>INFORMATION</Nav.Link>
