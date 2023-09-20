@@ -79,6 +79,34 @@ const ProductScreen = () => {
     toast.warning(`Removed custom color!`);
   };
 
+  const clearedQuantity = () => {
+    const clearedQtys = {};
+    for (const colorName in colorQtys) {
+      clearedQtys[colorName] = 0;
+    }
+    setColorQtys(clearedQtys);
+  }
+
+  const updatePage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  }
+
+  const addAllColorsToCartHandler = () => {
+    const colorsToAdd = [];
+    for (const color of filteredColors) {
+      const qty = colorQtys[color.name];
+      if (qty > 0) {
+        colorsToAdd.push({ ...color, qty });
+      }
+    }
+    colorsToAdd.forEach((color) => {
+      dispatch(addToCart({ ...product, color, qty: color.qty }));
+    });
+    clearedQuantity();
+    toast.success(`Added ${product.name} to the cart!`);
+
+  };
+
   const filteredColors = searchColor
     ? colorSet?.colors.filter((color) =>
         color.name.toLowerCase().includes(searchColor.toLowerCase())
@@ -186,13 +214,13 @@ const ProductScreen = () => {
                   value={searchColor}
                   onChange={(e) => setSearchColor(e.target.value)}
                 />
+
                 <Table striped bordered hover className="mt-3">
                   <thead>
                     <tr>
                       <th>Color</th>
                       <th>Color Code</th>
                       <th>QTY</th>
-                      <th>Add to List</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -206,10 +234,7 @@ const ProductScreen = () => {
                       </tr>
                     ) : (
                       filteredColors
-                        .slice(
-                          (currentPage - 1) * itemsPerPage,
-                          currentPage * itemsPerPage
-                        )
+                        .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
                         .map((color, index) => (
                           <tr key={index}>
                             <td
@@ -220,48 +245,56 @@ const ProductScreen = () => {
                             <td>{color.name}</td>
                             <td>
                               <Form.Control
+                                key={color.name}
                                 type="number"
                                 style={{ width: "80px" }}
-                                onChange={(e) =>
+                                min={0}
+                                value={colorQtys[color.name]}
+                                onChange={(e) => {
+                                  const newValue = Number(e.target.value);
                                   setColorQtys({
                                     ...colorQtys,
-                                    [color.name]: Number(e.target.value),
-                                  })
-                                }
+                                    [color.name]: newValue,
+                                  });
+                                }}
                               />
-                            </td>
-                            <td>
-                              <Button
-                                variant="primary"
-                                onClick={() => addColorToCartHandler(color)}
-                              >
-                                Add to List
-                              </Button>
                             </td>
                           </tr>
                         ))
                     )}
                   </tbody>
                 </Table>
+
+                
                 <Row className="mt-3">
                   <Col>
-                    <Button
-                      variant="primary"
-                      disabled={currentPage === 1}
-                      onClick={() => setCurrentPage(currentPage - 1)}
-                    >
-                      Previous
-                    </Button>
-                    <span className="mx-2">{currentPage}</span>
-                    <Button
-                      variant="primary"
-                      disabled={
-                        currentPage * itemsPerPage >= filteredColors?.length
-                      }
-                      onClick={() => setCurrentPage(currentPage + 1)}
-                    >
-                      Next
-                    </Button>
+                  <div>
+                      <Button
+                        variant="primary"
+                        onClick={addAllColorsToCartHandler}
+                      >
+                        Add to List
+                      </Button>
+                    </div>
+                    <div>
+                      <Button
+                        variant="primary"
+                        disabled={currentPage === 1}
+                        onClick={() => updatePage(currentPage - 1)}
+                      >
+                        Previous
+                      </Button>
+                      <span className="mx-2">{currentPage}</span>
+                      <Button
+                        variant="primary"
+                        disabled={
+                          currentPage * itemsPerPage >= filteredColors?.length
+                        }
+                        onClick={() => updatePage(currentPage + 1)}
+                      >
+                        Next
+                      </Button>
+                    </div>
                   </Col>
                 </Row>
               </Col>

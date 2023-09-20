@@ -12,15 +12,18 @@ const cartSlice = createSlice({
     addToCart: (state, action) => {
       const item = action.payload;
 
-      // Include _id and colorCode in your cart items
-      const existItem = state.cartItems.find(
-        (x) => x._id === item._id && x.colorCode === item.colorCode
+      const existingItemIndex = state.cartItems.findIndex(
+        (x) => x._id === item._id && x.color.name === item.color.name
       );
 
-      if (existItem) {
-        state.cartItems = state.cartItems.map((x) =>
-          x._id === existItem._id && x.colorCode === existItem.colorCode ? item : x
-        );
+
+      if (existingItemIndex !== -1) {
+        const updatedCartItems = [...state.cartItems];
+        updatedCartItems[existingItemIndex] = {
+          ...updatedCartItems[existingItemIndex],
+          qty: updatedCartItems[existingItemIndex].qty + item.qty 
+        };
+        state.cartItems = updatedCartItems;
       } else {
         state.cartItems = [...state.cartItems, item];
       }
@@ -31,7 +34,7 @@ const cartSlice = createSlice({
     removeFromCart: (state, action) => {
       const { _id, colorCode } = action.payload;
       state.cartItems = state.cartItems.filter(
-        (x) => x._id !== _id || x.colorCode !== colorCode
+        (x) => x._id !== _id || x.color.name !== colorCode
       );
       return updateCart(state);
     },
