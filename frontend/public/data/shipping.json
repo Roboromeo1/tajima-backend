@@ -1,0 +1,984 @@
+{
+  "price": [
+    {
+      "category": 1,
+      "max_weight": 2,
+      "premium": 20.48,
+      "standard": 23.10,
+      "economy": 10.19
+    },
+    {
+      "category": 2,
+      "max_weight": 2,
+      "premium": 22.05,
+      "standard": 31.50,
+      "economy": 10.71
+    },
+    {
+      "category": 3,
+      "max_weight": 2,
+      "premium": 22.05,
+      "standard": 35.70,
+      "economy": 14.65
+    },
+    {
+      "category": 4,
+      "max_weight": 2,
+      "premium": 14.18,
+      "standard": 23.10,
+      "economy": 9.98
+    },
+    {
+      "category": 5,
+      "max_weight": 2,
+      "premium": 18.38,
+      "standard": 23.10,
+      "economy": 9.98
+    },
+    {
+      "category": 6,
+      "max_weight": 2,
+      "premium": 18.38,
+      "standard": 23.10,
+      "economy": 9.98
+    },
+    {
+      "category": 7,
+      "max_weight": 2,
+      "premium": 22.05,
+      "standard": 32.55,
+      "economy": 9.98
+    },
+    {
+      "category": 8,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 40.95,
+      "economy": 9.98
+    },
+    {
+      "category": 9,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 84.00,
+      "economy": 14.65
+    },
+    {
+      "category": 10,
+      "max_weight": 2,
+      "premium": 22.05,
+      "standard": 26.25,
+      "economy": 10.19
+    },
+    {
+      "category": 11,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 35.70,
+      "economy": 14.65
+    },
+    {
+      "category": 12,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 38.85,
+      "economy": 14.65
+    },
+    {
+      "category": 13,
+      "max_weight": 2,
+      "premium": 22.05,
+      "standard": 45.15,
+      "economy": 10.19
+    },
+    {
+      "category": 14,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 72.45,
+      "economy": 14.65
+    },
+    {
+      "category": 15,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 66.15,
+      "economy": 14.65
+    },
+    {
+      "category": 16,
+      "max_weight": 2,
+      "premium": 22.95,
+      "standard": 44.10,
+      "economy": 10.71
+    },
+    {
+      "category": 17,
+      "max_weight": 2,
+      "premium": 25.20,
+      "standard": 42.00,
+      "economy": 10.71
+    },
+    {
+      "category": 18,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 57.75,
+      "economy": 10.71
+    },
+    {
+      "category": 19,
+      "max_weight": 2,
+      "premium": 25.20,
+      "standard": 77.70,
+      "economy": 14.65
+    },
+    {
+      "category": 20,
+      "max_weight": 2,
+      "premium": 24.15,
+      "standard": 90.30,
+      "economy": 14.65
+    },
+    {
+      "category": 1,
+      "max_weight": 3,
+      "premium": 25.20,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 2,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 31.50,
+      "economy": 13.13
+    },
+    {
+      "category": 3,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 35.70,
+      "economy": 19.22
+    },
+    {
+      "category": 4,
+      "max_weight": 3,
+      "premium": 16.28,
+      "standard": 23.10,
+      "economy": 11.03
+    },
+    {
+      "category": 5,
+      "max_weight": 3,
+      "premium": 24.15,
+      "standard": 23.10,
+      "economy": 11.03
+    },
+    {
+      "category": 6,
+      "max_weight": 3,
+      "premium": 24.15,
+      "standard": 23.10,
+      "economy": 11.03
+    },
+    {
+      "category": 7,
+      "max_weight": 3,
+      "premium": 27.30,
+      "standard": 32.55,
+      "economy": 11.03
+    },
+    {
+      "category": 8,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 40.95,
+      "economy": 11.03
+    },
+    {
+      "category": 9,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 84.00,
+      "economy": 19.27
+    },
+    {
+      "category": 10,
+      "max_weight": 3,
+      "premium": 27.30,
+      "standard": 26.25,
+      "economy": 11.76
+    },
+    {
+      "category": 11,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 35.70,
+      "economy": 19.27
+    },
+    {
+      "category": 12,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 38.85,
+      "economy": 19.27
+    },
+    {
+      "category": 13,
+      "max_weight": 3,
+      "premium": 27.30,
+      "standard": 45.15,
+      "economy": 11.76
+    },
+    {
+      "category": 14,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 72.45,
+      "economy": 19.27
+    },
+    {
+      "category": 15,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 66.15,
+      "economy": 19.27
+    },
+    {
+      "category": 16,
+      "max_weight": 3,
+      "premium": 27.30,
+      "standard": 44.10,
+      "economy": 13.28
+    },
+    {
+      "category": 17,
+      "max_weight": 3,
+      "premium": 30.40,
+      "standard": 42.00,
+      "economy": 13.28
+    },
+    {
+      "category": 18,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 57.75,
+      "economy": 13.28
+    },
+    {
+      "category": 19,
+      "max_weight": 3,
+      "premium": 30.40,
+      "standard": 77.70,
+      "economy": 19.25
+    },
+    {
+      "category": 20,
+      "max_weight": 3,
+      "premium": 29.40,
+      "standard": 90.30,
+      "economy": 19.25
+    },
+    {
+      "category": 1,
+      "max_weight": 5,
+      "premium": 39.90,
+      "standard": 23.10,
+      "economy": 14.18
+    },
+    {
+      "category": 2,
+      "max_weight": 5,
+      "premium": 56.70,
+      "standard": 31.50,
+      "economy": 16.28
+    },
+    {
+      "category": 3,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 35.70,
+      "economy": 24.68
+    },
+    {
+      "category": 4,
+      "max_weight": 5,
+      "premium": 19.43,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 5,
+      "max_weight": 5,
+      "premium": 33.60,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 6,
+      "max_weight": 5,
+      "premium": 33.60,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 7,
+      "max_weight": 5,
+      "premium": 44.10,
+      "standard": 32.55,
+      "economy": 12.08
+    },
+    {
+      "category": 8,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 40.95,
+      "economy": 12.08
+    },
+    {
+      "category": 9,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 84.00,
+      "economy": 24.15
+    },
+    {
+      "category": 10,
+      "max_weight": 5,
+      "premium": 44.10,
+      "standard": 26.25,
+      "economy": 14.39
+    },
+    {
+      "category": 11,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 35.70,
+      "economy": 24.66
+    },
+    {
+      "category": 12,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 38.85,
+      "economy": 24.66
+    },
+    {
+      "category": 13,
+      "max_weight": 5,
+      "premium": 44.10,
+      "standard": 45.15,
+      "economy": 14.39
+    },
+    {
+      "category": 14,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 72.45,
+      "economy": 24.66
+    },
+    {
+      "category": 15,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 66.15,
+      "economy": 24.66
+    },
+    {
+      "category": 16,
+      "max_weight": 5,
+      "premium": 44.10,
+      "standard": 44.10,
+      "economy": 16.26
+    },
+    {
+      "category": 17,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 42.00,
+      "economy": 16.26
+    },
+    {
+      "category": 18,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 57.75,
+      "economy": 16.26
+    },
+    {
+      "category": 19,
+      "max_weight": 5,
+      "premium": 47.72,
+      "standard": 77.70,
+      "economy": 24.66
+    },
+    {
+      "category": 20,
+      "max_weight": 5,
+      "premium": 47.25,
+      "standard": 95.55,
+      "economy": 24.66
+    },
+    {
+      "category": 1,
+      "max_weight": 10,
+      "premium": 79.80,
+      "standard": 23.10,
+      "economy": 16.80
+    },
+    {
+      "category": 2,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 31.50,
+      "economy": 20.48
+    },
+    {
+      "category": 3,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 35.70,
+      "economy": 32.13
+    },
+    {
+      "category": 4,
+      "max_weight": 10,
+      "premium": 28.35,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 5,
+      "max_weight": 10,
+      "premium": 61.95,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 6,
+      "max_weight": 10,
+      "premium": 61.95,
+      "standard": 23.10,
+      "economy": 12.08
+    },
+    {
+      "category": 7,
+      "max_weight": 10,
+      "premium": 88.20,
+      "standard": 32.55,
+      "economy": 12.08
+    },
+    {
+      "category": 8,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 40.95,
+      "economy": 12.08
+    },
+    {
+      "category": 9,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 84.00,
+      "economy": 32.18
+    },
+    {
+      "category": 10,
+      "max_weight": 10,
+      "premium": 88.20,
+      "standard": 26.25,
+      "economy": 17.75
+    },
+    {
+      "category": 11,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 35.70,
+      "economy": 32.18
+    },
+    {
+      "category": 12,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 38.85,
+      "economy": 32.18
+    },
+    {
+      "category": 13,
+      "max_weight": 10,
+      "premium": 88.20,
+      "standard": 45.15,
+      "economy": 17.75
+    },
+    {
+      "category": 14,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 72.45,
+      "economy": 32.18
+    },
+    {
+      "category": 15,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 66.15,
+      "economy": 32.18
+    },
+    {
+      "category": 16,
+      "max_weight": 10,
+      "premium": 88.20,
+      "standard": 44.10,
+      "economy": 20.42
+    },
+    {
+      "category": 17,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 42.00,
+      "economy": 20.42
+    },
+    {
+      "category": 18,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 57.75,
+      "economy": 20.42
+    },
+    {
+      "category": 19,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 77.70,
+      "economy": 32.18
+    },
+    {
+      "category": 20,
+      "max_weight": 10,
+      "premium": 98.70,
+      "standard": 117.60,
+      "economy": 32.18
+    },
+    {
+      "category": 1,
+      "max_weight": 15,
+      "premium": 147.00,
+      "standard": 26.25,
+      "economy": 26.25
+    },
+    {
+      "category": 2,
+      "max_weight": 15,
+      "premium": 168.00,
+      "standard": 35.70,
+      "economy": 33.60
+    },
+    {
+      "category": 3,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 58.80,
+      "economy": 39.90
+    },
+    {
+      "category": 4,
+      "max_weight": 15,
+      "premium": 39.90,
+      "standard": 25.20,
+      "economy": 14.18
+    },
+    {
+      "category": 5,
+      "max_weight": 15,
+      "premium": 123.90,
+      "standard": 26.25,
+      "economy": 23.10
+    },
+    {
+      "category": 6,
+      "max_weight": 15,
+      "premium": 123.90,
+      "standard": 26.25,
+      "economy": 23.10
+    },
+    {
+      "category": 7,
+      "max_weight": 15,
+      "premium": 161.70,
+      "standard": 36.75,
+      "economy": 17.75
+    },
+    {
+      "category": 8,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 47.25,
+      "economy": 35.70
+    },
+    {
+      "category": 9,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 99.75,
+      "economy": 58.80
+    },
+    {
+      "category": 10,
+      "max_weight": 15,
+      "premium": 161.70,
+      "standard": 29.40,
+      "economy": 29.40
+    },
+    {
+      "category": 11,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 40.95,
+      "economy": 58.80
+    },
+    {
+      "category": 12,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 44.10,
+      "economy": 58.80
+    },
+    {
+      "category": 13,
+      "max_weight": 15,
+      "premium": 161.70,
+      "standard": 53.55,
+      "economy": 29.40
+    },
+    {
+      "category": 14,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 85.05,
+      "economy": 59.59
+    },
+    {
+      "category": 15,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 78.75,
+      "economy": 59.59
+    },
+    {
+      "category": 16,
+      "max_weight": 15,
+      "premium": 161.70,
+      "standard": 50.40,
+      "economy": 35.70
+    },
+    {
+      "category": 17,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 48.30,
+      "economy": 35.70
+    },
+    {
+      "category": 18,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 67.20,
+      "economy": 35.70
+    },
+    {
+      "category": 19,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 92.40,
+      "economy": 59.59
+    },
+    {
+      "category": 20,
+      "max_weight": 15,
+      "premium": 175.35,
+      "standard": 123.90,
+      "economy": 59.59
+    },
+    {
+      "category": 1,
+      "max_weight": 20,
+      "premium": 199.50,
+      "standard": 45.15,
+      "economy": 36.75
+    },
+    {
+      "category": 2,
+      "max_weight": 20,
+      "premium": 220.50,
+      "standard": 53.55,
+      "economy": 50.40
+    },
+    {
+      "category": 3,
+      "max_weight": 20,
+      "premium": 231.00,
+      "standard": 55.65,
+      "economy": 91.35
+    },
+    {
+      "category": 4,
+      "max_weight": 20,
+      "premium": 100.80,
+      "standard": 31.50,
+      "economy": 19.43
+    },
+    {
+      "category": 5,
+      "max_weight": 20,
+      "premium": 181.65,
+      "standard": 33.60,
+      "economy": 30.45
+    },
+    {
+      "category": 6,
+      "max_weight": 20,
+      "premium": 181.65,
+      "standard": 33.60,
+      "economy": 30.45
+    },
+    {
+      "category": 7,
+      "max_weight": 20,
+      "premium": 219.45,
+      "standard": 51.45,
+      "economy": 29.40
+    },
+    {
+      "category": 8,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 67.20,
+      "economy": 53.55
+    },
+    {
+      "category": 9,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 147.00,
+      "economy": 91.35
+    },
+    {
+      "category": 10,
+      "max_weight": 20,
+      "premium": 219.45,
+      "standard": 37.80,
+      "economy": 45.15
+    },
+    {
+      "category": 11,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 56.70,
+      "economy": 91.88
+    },
+    {
+      "category": 12,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 63.00,
+      "economy": 91.88
+    },
+    {
+      "category": 13,
+      "max_weight": 20,
+      "premium": 219.45,
+      "standard": 78.75,
+      "economy": 45.15
+    },
+    {
+      "category": 14,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 128.10,
+      "economy": 91.98
+    },
+    {
+      "category": 15,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 128.10,
+      "economy": 91.98
+    },
+    {
+      "category": 16,
+      "max_weight": 20,
+      "premium": 220.50,
+      "standard": 73.50,
+      "economy": 53.92
+    },
+    {
+      "category": 17,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 70.35,
+      "economy": 53.92
+    },
+    {
+      "category": 18,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 98.70,
+      "economy": 53.92
+    },
+    {
+      "category": 19,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 137.55,
+      "economy": 91.95
+    },
+    {
+      "category": 20,
+      "max_weight": 20,
+      "premium": 233.10,
+      "standard": 291.90,
+      "economy": 91.95
+    },
+    {
+      "category": 1,
+      "max_weight": 20000,
+      "premium": 399.00,
+      "standard": 90.30,
+      "economy": 56.70
+    },
+    {
+      "category": 2,
+      "max_weight": 20000,
+      "premium": 441.00,
+      "standard": 84.00,
+      "economy": 100.80
+    },
+    {
+      "category": 3,
+      "max_weight": 20000,
+      "premium": 462.00,
+      "standard": 93.45,
+      "economy": 182.70
+    },
+    {
+      "category": 4,
+      "max_weight": 20000,
+      "premium": 201.60,
+      "standard": 47.25,
+      "economy": 38.85
+    },
+    {
+      "category": 5,
+      "max_weight": 20000,
+      "premium": 363.30,
+      "standard": 60.90,
+      "economy": 35.70
+    },
+    {
+      "category": 6,
+      "max_weight": 20000,
+      "premium": 363.30,
+      "standard": 60.90,
+      "economy": 35.70
+    },
+    {
+      "category": 7,
+      "max_weight": 20000,
+      "premium": 438.90,
+      "standard": 86.10,
+      "economy": 90.30
+    },
+    {
+      "category": 8,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 115.50,
+      "economy": 107.10
+    },
+    {
+      "category": 9,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 269.85,
+      "economy": 182.70
+    },
+    {
+      "category": 10,
+      "max_weight": 20000,
+      "premium": 438.90,
+      "standard": 59.85,
+      "economy": 90.30
+    },
+    {
+      "category": 11,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 95.55,
+      "economy": 183.75
+    },
+    {
+      "category": 12,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 107.10,
+      "economy": 183.75
+    },
+    {
+      "category": 13,
+      "max_weight": 20000,
+      "premium": 438.90,
+      "standard": 140.70,
+      "economy": 90.30
+    },
+    {
+      "category": 14,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 231.00,
+      "economy": 183.96
+    },
+    {
+      "category": 15,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 231.00,
+      "economy": 183.96
+    },
+    {
+      "category": 16,
+      "max_weight": 20000,
+      "premium": 441.00,
+      "standard": 129.15,
+      "economy": 107.84
+    },
+    {
+      "category": 17,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 121.80,
+      "economy": 107.84
+    },
+    {
+      "category": 18,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 174.30,
+      "economy": 107.84
+    },
+    {
+      "category": 19,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 244.65,
+      "economy": 183.90
+    },
+    {
+      "category": 20,
+      "max_weight": 20000,
+      "premium": 466.20,
+      "standard": 517.65,
+      "economy": 183.90
+    }
+  ]
+}

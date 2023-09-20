@@ -1,0 +1,268 @@
+{
+  "price_category": [
+    {
+      "category_id": 2,
+      "suburb": "CBR"
+    },
+    {
+      "category_id": 2,
+      "suburb": "GOS"
+    },
+    {
+      "category_id": 2,
+      "suburb": "WOL"
+    },
+    {
+      "category_id": 2,
+      "suburb": "NCL"
+    },
+    {
+      "category_id": 2,
+      "suburb": "ALB"
+    },
+    {
+      "category_id": 3,
+      "suburb": "NC1"
+    },
+    {
+      "category_id": 3,
+      "suburb": "NC2"
+    },
+    {
+      "category_id": 3,
+      "suburb": "NC3"
+    },
+    {
+      "category_id": 3,
+      "suburb": "NC4"
+    },
+    {
+      "category_id": 3,
+      "suburb": "NC5"
+    },
+    {
+      "category_id": 3,
+      "suburb": "NC6"
+    },
+    {
+      "category_id": 4,
+      "suburb": "MEL"
+    },
+    {
+      "category_id": 5,
+      "suburb": "BAL"
+    },
+    {
+      "category_id": 5,
+      "suburb": "GEE"
+    },
+    {
+      "category_id": 6,
+      "suburb": "VC1"
+    },
+    {
+      "category_id": 6,
+      "suburb": "VC2"
+    },
+    {
+      "category_id": 6,
+      "suburb": "VC3"
+    },
+    {
+      "category_id": 7,
+      "suburb": "BRS"
+    },
+    {
+      "category_id": 8,
+      "suburb": "GLD"
+    },
+    {
+      "category_id": 8,
+      "suburb": "SSC"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC1"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC2"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC3"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC4"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC5"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC6"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC7"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC8"
+    },
+    {
+      "category_id": 9,
+      "suburb": "QC9"
+    },
+    {
+      "category_id": 10,
+      "suburb": "ADL"
+    },
+    {
+      "category_id": 11,
+      "suburb": "ADH"
+    },
+    {
+      "category_id": 11,
+      "suburb": "BAR"
+    },
+    {
+      "category_id": 12,
+      "suburb": "AC1"
+    },
+    {
+      "category_id": 12,
+      "suburb": "AC2"
+    },
+    {
+      "category_id": 12,
+      "suburb": "AC3"
+    },
+    {
+      "category_id": 12,
+      "suburb": "AC4"
+    },
+    {
+      "category_id": 13,
+      "suburb": "PER"
+    },
+    {
+      "category_id": 14,
+      "suburb": "RKH"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC1"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC2"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC3"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC4"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC5"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC6"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC7"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC8"
+    },
+    {
+      "category_id": 15,
+      "suburb": "WC9"
+    },
+    {
+      "category_id": 16,
+      "suburb": "HOB"
+    },
+    {
+      "category_id": 17,
+      "suburb": "LCN"
+    },
+    {
+      "category_id": 18,
+      "suburb": "HC1"
+    },
+    {
+      "category_id": 18,
+      "suburb": "LC1"
+    },
+    {
+      "category_id": 18,
+      "suburb": "LC2"
+    },
+    {
+      "category_id": 18,
+      "suburb": "LC3"
+    },
+    {
+      "category_id": 19,
+      "suburb": "AC5"
+    },
+    {
+      "category_id": 19,
+      "suburb": "AC6"
+    },
+    {
+      "category_id": 19,
+      "suburb": "AC7"
+    },
+    {
+      "category_id": 19,
+      "suburb": "AC8"
+    },
+    {
+      "category_id": 19,
+      "suburb": "AC9"
+    },
+    {
+      "category_id": 20,
+      "suburb": "N10"
+    },
+    {
+      "category_id": 20,
+      "suburb": "Q10"
+    },
+    {
+      "category_id": 20,
+      "suburb": "L10"
+    },
+    {
+      "category_id": 20,
+      "suburb": "DC4"
+    },
+    {
+      "category_id": 20,
+      "suburb": "DC6"
+    },
+    {
+      "category_id": 20,
+      "suburb": "DC7"
+    },
+    {
+      "category_id": 20,
+      "suburb": "D10"
+    },
+    {
+      "category_id": 20,
+      "suburb": "A10"
+    }
+  ]
+}
