@@ -1,268 +1,272 @@
 {
   "price_category": [
     {
-      "category_id": 2,
-      "suburb": "CBR"
+      "category_id": 1,
+      "state": "SYD"
     },
     {
       "category_id": 2,
-      "suburb": "GOS"
+      "state": "CBR"
     },
     {
       "category_id": 2,
-      "suburb": "WOL"
+      "state": "GOS"
     },
     {
       "category_id": 2,
-      "suburb": "NCL"
+      "state": "WOL"
     },
     {
       "category_id": 2,
-      "suburb": "ALB"
+      "state": "NCL"
+    },
+    {
+      "category_id": 2,
+      "state": "ALB"
     },
     {
       "category_id": 3,
-      "suburb": "NC1"
+      "state": "NC1"
     },
     {
       "category_id": 3,
-      "suburb": "NC2"
+      "state": "NC2"
     },
     {
       "category_id": 3,
-      "suburb": "NC3"
+      "state": "NC3"
     },
     {
       "category_id": 3,
-      "suburb": "NC4"
+      "state": "NC4"
     },
     {
       "category_id": 3,
-      "suburb": "NC5"
+      "state": "NC5"
     },
     {
       "category_id": 3,
-      "suburb": "NC6"
+      "state": "NC6"
     },
     {
       "category_id": 4,
-      "suburb": "MEL"
+      "state": "MEL"
     },
     {
       "category_id": 5,
-      "suburb": "BAL"
+      "state": "BAL"
     },
     {
       "category_id": 5,
-      "suburb": "GEE"
+      "state": "GEE"
     },
     {
       "category_id": 6,
-      "suburb": "VC1"
+      "state": "VC1"
     },
     {
       "category_id": 6,
-      "suburb": "VC2"
+      "state": "VC2"
     },
     {
       "category_id": 6,
-      "suburb": "VC3"
+      "state": "VC3"
     },
     {
       "category_id": 7,
-      "suburb": "BRS"
+      "state": "BRS"
     },
     {
       "category_id": 8,
-      "suburb": "GLD"
+      "state": "GLD"
     },
     {
       "category_id": 8,
-      "suburb": "SSC"
+      "state": "SSC"
     },
     {
       "category_id": 9,
-      "suburb": "QC1"
+      "state": "QC1"
     },
     {
       "category_id": 9,
-      "suburb": "QC2"
+      "state": "QC2"
     },
     {
       "category_id": 9,
-      "suburb": "QC3"
+      "state": "QC3"
     },
     {
       "category_id": 9,
-      "suburb": "QC4"
+      "state": "QC4"
     },
     {
       "category_id": 9,
-      "suburb": "QC5"
+      "state": "QC5"
     },
     {
       "category_id": 9,
-      "suburb": "QC6"
+      "state": "QC6"
     },
     {
       "category_id": 9,
-      "suburb": "QC7"
+      "state": "QC7"
     },
     {
       "category_id": 9,
-      "suburb": "QC8"
+      "state": "QC8"
     },
     {
       "category_id": 9,
-      "suburb": "QC9"
+      "state": "QC9"
     },
     {
       "category_id": 10,
-      "suburb": "ADL"
+      "state": "ADL"
     },
     {
       "category_id": 11,
-      "suburb": "ADH"
+      "state": "ADH"
     },
     {
       "category_id": 11,
-      "suburb": "BAR"
+      "state": "BAR"
     },
     {
       "category_id": 12,
-      "suburb": "AC1"
+      "state": "AC1"
     },
     {
       "category_id": 12,
-      "suburb": "AC2"
+      "state": "AC2"
     },
     {
       "category_id": 12,
-      "suburb": "AC3"
+      "state": "AC3"
     },
     {
       "category_id": 12,
-      "suburb": "AC4"
+      "state": "AC4"
     },
     {
       "category_id": 13,
-      "suburb": "PER"
+      "state": "PER"
     },
     {
       "category_id": 14,
-      "suburb": "RKH"
+      "state": "RKH"
     },
     {
       "category_id": 15,
-      "suburb": "WC1"
+      "state": "WC1"
     },
     {
       "category_id": 15,
-      "suburb": "WC2"
+      "state": "WC2"
     },
     {
       "category_id": 15,
-      "suburb": "WC3"
+      "state": "WC3"
     },
     {
       "category_id": 15,
-      "suburb": "WC4"
+      "state": "WC4"
     },
     {
       "category_id": 15,
-      "suburb": "WC5"
+      "state": "WC5"
     },
     {
       "category_id": 15,
-      "suburb": "WC6"
+      "state": "WC6"
     },
     {
       "category_id": 15,
-      "suburb": "WC7"
+      "state": "WC7"
     },
     {
       "category_id": 15,
-      "suburb": "WC8"
+      "state": "WC8"
     },
     {
       "category_id": 15,
-      "suburb": "WC9"
+      "state": "WC9"
     },
     {
       "category_id": 16,
-      "suburb": "HOB"
+      "state": "HOB"
     },
     {
       "category_id": 17,
-      "suburb": "LCN"
+      "state": "LCN"
     },
     {
       "category_id": 18,
-      "suburb": "HC1"
+      "state": "HC1"
     },
     {
       "category_id": 18,
-      "suburb": "LC1"
+      "state": "LC1"
     },
     {
       "category_id": 18,
-      "suburb": "LC2"
+      "state": "LC2"
     },
     {
       "category_id": 18,
-      "suburb": "LC3"
+      "state": "LC3"
     },
     {
       "category_id": 19,
-      "suburb": "AC5"
+      "state": "AC5"
     },
     {
       "category_id": 19,
-      "suburb": "AC6"
+      "state": "AC6"
     },
     {
       "category_id": 19,
-      "suburb": "AC7"
+      "state": "AC7"
     },
     {
       "category_id": 19,
-      "suburb": "AC8"
+      "state": "AC8"
     },
     {
       "category_id": 19,
-      "suburb": "AC9"
+      "state": "AC9"
     },
     {
       "category_id": 20,
-      "suburb": "N10"
+      "state": "N10"
     },
     {
       "category_id": 20,
-      "suburb": "Q10"
+      "state": "Q10"
     },
     {
       "category_id": 20,
-      "suburb": "L10"
+      "state": "L10"
     },
     {
       "category_id": 20,
-      "suburb": "DC4"
+      "state": "DC4"
     },
     {
       "category_id": 20,
-      "suburb": "DC6"
+      "state": "DC6"
     },
     {
       "category_id": 20,
-      "suburb": "DC7"
+      "state": "DC7"
     },
     {
       "category_id": 20,
-      "suburb": "D10"
+      "state": "D10"
     },
     {
       "category_id": 20,
-      "suburb": "A10"
+      "state": "A10"
     }
   ]
 }
