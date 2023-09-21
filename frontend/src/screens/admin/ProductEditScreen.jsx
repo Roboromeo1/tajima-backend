@@ -21,6 +21,7 @@ const ProductEditScreen = () => {
   const [brand, setBrand] = useState("");
   const [category, setCategory] = useState("");
   const [countInStock, setCountInStock] = useState(0);
+  const [weight, setWeight] = useState(0);
   const [description, setDescription] = useState("");
   const [colorSetId, setColorSetId] = useState("");
 
@@ -43,6 +44,7 @@ const ProductEditScreen = () => {
         productId,
         name,
         price,
+        weight,
         image,
         brand,
         category,
@@ -64,6 +66,7 @@ const ProductEditScreen = () => {
       setPrice(product.price);
       setImage(product.image);
       setBrand(product.brand);
+      setWeight(product.weight);
       setCategory(product.category);
       setCountInStock(product.countInStock);
       setDescription(product.description);
@@ -153,9 +156,21 @@ const ProductEditScreen = () => {
               <Form.Label>Count In Stock</Form.Label>
               <Form.Control
                 type="number"
+                min={0}
                 placeholder="Enter countInStock"
                 value={countInStock}
                 onChange={(e) => setCountInStock(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId="weight">
+              <Form.Label>Weight</Form.Label>
+              <Form.Control
+                type="number"
+                min={0}
+                placeholder="Enter weight"
+                value={weight}
+                onChange={(e) => setWeight(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
