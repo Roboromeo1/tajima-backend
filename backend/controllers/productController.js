@@ -51,11 +51,12 @@ const createProduct = asyncHandler(async (req, res) => {
   // console.log(req.body.colorSetId)
   try{
     console.log("Nitish api call for post new product");
-  const { name, price, description, image, brand, category, countInStock, colorSetId } = req.body;
+  const { name, price, description, image, brand, category, countInStock, colorSetId, weight } = req.body;
 
   const product = new Product({
     name,
     price,
+    weight,
     user: req.user._id,
     image,
     brand,
@@ -78,7 +79,8 @@ const createProduct = asyncHandler(async (req, res) => {
 const updateProduct = asyncHandler(async (req, res) => {
   const { 
     name, 
-    price, 
+    price,
+    weight,
     description, 
     image, 
     brand, 
@@ -100,6 +102,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     }
     product.name = name;
     product.price = price;
+    product.weight = weight;
     product.description = description;
     product.image = image;
     product.brand = brand;
