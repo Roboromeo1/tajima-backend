@@ -13,7 +13,7 @@ const cartSlice = createSlice({
       const item = action.payload;
 
       const existingItemIndex = state.cartItems.findIndex(
-        (x) => x._id === item._id && x.color.name === item.color.name
+        (x) => x._id === item._id && x.color?.name === item.color?.name
       );
 
 
@@ -34,7 +34,7 @@ const cartSlice = createSlice({
     removeFromCart: (state, action) => {
       const { _id, colorCode } = action.payload;
       state.cartItems = state.cartItems.filter(
-        (x) => x._id !== _id || x.color.name !== colorCode
+        (x) => x._id !== _id || (x.color?.name && x.color?.name !== colorCode)
       );
       return updateCart(state);
     },

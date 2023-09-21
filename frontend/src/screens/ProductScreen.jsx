@@ -111,7 +111,7 @@ const ProductScreen = () => {
     ? colorSet?.colors.filter((color) =>
         color.name.toLowerCase().includes(searchColor.toLowerCase())
       )
-    : colorSet?.colors;
+    : colorSet?.colors ? colorSet?.colors : [];
 
   return (
     <>
